@@ -1,16 +1,15 @@
 @extends('layouts.master')
 
 @section('content')
-
-<h1>Edit Data Siswa</h1>
-@if(session('sukses'))
-<div class="alert alert-success" role="alert">
-  {{session('sukses')}}
-</div>
-@endif
-<div class="row">
-<div class="col-lg-12">
-<form action="/siswa/{{$siswa->id}}/update" method="POST">
+        <h1>Edit Data Siswa</h1>
+            @if(session('sukses'))
+            <div class="alert alert-success" role="alert">
+             {{session('sukses')}}
+            </div>
+            @endif
+            <div class="row">
+                <div class="col-lg-12">
+            <form action="/siswa/{{$siswa->id}}/update" method="POST">
       {{csrf_field()}}
   <div class="form-group">
     <label for="exampleInputEmail1">Nama</label>
@@ -36,4 +35,9 @@
     <input name='alamat' type="text" class="form-control" id="alamat" aria-describedby="emailHelp" placeholder="Alamat"value="{{$siswa->alamat}}">
   </div>
 </div>
+</div>
+    <button type="submit" class="btn btn-warning">Update</button>
+    </form>
+    </div>
+    </div>
 @endsection
