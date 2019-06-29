@@ -9,7 +9,7 @@
 @endif
 <div class="row">
 <div class="col-6">
-<h1>DAFTAR PENGUMPULAN TUGAS</h1> 
+<h1>DATA TUGAS MAHASISWA SEMESTER 4 </h1> 
 </div>
 <div class="col-6">
 <button type="button" class="btn btn-primary btn-sm float-right" data-toggle="modal" data-target="#exampleModal">
