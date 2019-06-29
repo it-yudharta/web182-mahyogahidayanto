@@ -26,15 +26,15 @@
       <th>NAMA GURU</th>
       <th>AKSI</th>
 </tr> 
-@foreach($data_tugas as $tugas)
+@foreach($data_siswa as $siswa)
 <tr>
-      <td>{{$tugas-> nama_siswa}}</td>
-      <td>{{$tugas-> nama_pelajaran}}</td>
-      <td>{{$tugas-> status_pengumpulan}}</td>
-      <td>{{$tugas-> nama_guru}}</td>
+      <td>{{$siswa-> nama_siswa}}</td>
+      <td>{{$siswa-> nama_pelajaran}}</td>
+      <td>{{$siswa-> status_pengumpulan}}</td>
+      <td>{{$siswa-> nama_guru}}</td>
 <td>
-    <a href="/tugas/{{$tugas->id}}/edit" class="btn btn-warning btn-sm">Edit</a>
-    <a href="/tugas/{{$tugas->id}}/delete" class="btn btn-danger btn-sm"onclick="return confirm('Apakah Anda Ingin Menghapus Data Ini?')">Delete</a>
+    <a href="/siswa/{{$siswa->id}}/edit" class="btn btn-warning btn-sm">Edit</a>
+    <a href="/siswa/{{$siswa->id}}/delete" class="btn btn-danger btn-sm"onclick="return confirm('Apakah Anda Ingin Menghapus Data Ini?')">Delete</a>
 </td>
 </tr>
 @endforeach
